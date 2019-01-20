@@ -1,0 +1,23 @@
+.loading{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.4);
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index: 100;
+  display: none;
+  img{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: calc(50% - 2.5vw);
+    top:calc(50vh - 2.5vw);
+    animation: reta 2s infinite linear;
+  }
+}
+@keyframes reta {
+  to{
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,17 @@
+.pub-info {
+  p {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    margin: {
+      bottom: 10px;
+      top: 0;
+    } ;
+    &:nth-child(2){
+      margin-bottom: 6px;
+    }
+  }
+  ol{
+    margin-top: 0;
+  }
+}
