@@ -4,6 +4,8 @@ import {withRouter} from "react-router";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 import PubHead from "./../components/pubHead/pubHead"
 import PubInfo from "./../components/pubInfo/pubInfo"
+import CommonQuestions from "./../components/commonQuestions/commonQuestions"
+import PubFoot from "./../components/pubFoot/pubFoot"
 import PubLoading from "./../components/pubLoading/pubLoading"
 
 
@@ -36,7 +38,6 @@ class Layout extends Component <IProps, PageState> {
                 <div className={"content"}>
                     <PubInfo>
                     </PubInfo>
-
                     <div >
                         <TransitionGroup>
                             <CSSTransition key={location.pathname}
@@ -46,6 +47,10 @@ class Layout extends Component <IProps, PageState> {
                             </CSSTransition>
                         </TransitionGroup>
                     </div>
+                    <CommonQuestions>
+                    </CommonQuestions>
+                    <PubFoot>
+                    </PubFoot>
                 </div>
 
             </div>

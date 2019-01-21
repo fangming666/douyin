@@ -29,9 +29,13 @@ const request = (url: string, options: any = {}) => {
     loadingDom.style.display = "block";
     let {getKey, link} = options;
     let resultUrl: string = `${url}?${getKey}=${link}`;
-    return fetch(resultUrl, {
-        method: "GET",
-    })
+    return Promise.race([
+        fetch(resultUrl, {
+            method: "GET",
+        }),
+        new Promise(function(resolve,reject){
+            setTimeout(()=> reject(new Error('request timeout')),2000)
+        })])
         .then(checkStatus)
         .then(parseJSON)
         .then((data) => {
@@ -44,6 +48,7 @@ const request = (url: string, options: any = {}) => {
                 return err
             }
         );
+
 };
 
 export default request

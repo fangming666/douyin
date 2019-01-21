@@ -1,0 +1,10 @@
+.pub-foot{
+  &>p{
+    text-align: center;
+    margin-bottom: 10px;
+    &:nth-child(2), &:nth-child(3){
+      font-size: 13px;
+      color: rgb(153, 153, 153);
+    }
+  }
+}

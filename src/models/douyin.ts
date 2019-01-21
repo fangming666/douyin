@@ -10,7 +10,7 @@ export default {
         "changeDouyinAnalyze"(state: any, {payload: {data}}: any) {
             return {
                 ...state,
-                _douyinAnalyze: data.video,
+                _douyinAnalyze: data.video.replace(/\s/g,""),
             }
         },
     },
@@ -26,12 +26,12 @@ export default {
                 yield put({
                     type: 'changeDouyinAnalyze',
                     payload: {
-                        data
+                        data:data
                     }
                 })
 
             } catch (err) {
-                throw new Error(err);
+                // throw new Error(err);
             }
 
         }
