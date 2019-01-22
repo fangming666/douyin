@@ -28,7 +28,6 @@ export default {
                 })
 
             } catch (err) {
-                console.log("all err is", err);
                 throw new Error(err);
             }
 

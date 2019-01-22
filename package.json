@@ -59,6 +59,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-transition-group": "^2.0.15",
     "node-sass": "^4.11.0",
+    "react-html5video": "^2.5.1",
     "react-transition-group": "^2.5.3",
     "sass-loader": "^7.1.0",
     "typescript": "^3.2.2"

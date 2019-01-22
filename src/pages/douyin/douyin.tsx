@@ -4,6 +4,9 @@
 import * as React from "react";
 import {Component} from "react";
 import {connect} from "dva";
+// @ts-ignore
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 import PubInput from "./../../components/pubInput/pubInput"
 
 type PageOwnProps = {
@@ -75,6 +78,16 @@ class Douyin extends Component <PageOwnProps, PageState> {
                         analyzeSuccess: true
                     })
                 } catch (err) {
+                    //显示接口错误信息
+                    dispatch({
+                        type: "app/changeEmptySwitch",
+                        payload: {
+                            alertEmptySwitch: true
+                        }
+                    });
+                    this.setState({
+                        analyzeSuccess: false
+                    })
                     let errString: string = err.toString();
                     let resultErr: string = "";
                     if (errString.split("Error: Error:")) {
@@ -84,13 +97,6 @@ class Douyin extends Component <PageOwnProps, PageState> {
                             alertInfo: resultErr
                         });
                     } else {
-                        //显示接口错误信息
-                        dispatch({
-                            type: "app/changeEmptySwitch",
-                            payload: {
-                                alertEmptySwitch: true
-                            }
-                        });
                         this.setState({
                             alertInfo: err.toString(),
                         });
@@ -109,24 +115,6 @@ class Douyin extends Component <PageOwnProps, PageState> {
                 <PubInput alertInfo={this.state.alertInfo}
                           ownAnalyze={this.analyze.bind(this)}>
                 </PubInput>
-                {/*<div>*/}
-                    {/*<video width="320" height="240" controls>*/}
-                        {/*<source*/}
-                            {/*src={"http://v1-dy.ixigua.com/844a1d935b1261a8693922a78b000ffb/5c45e660/video/m/220b54fc20b3e23444bb03d328ffd5b0e56116144582000036265a7f7a3e/?rc=ampqNXg2bjRtajMzZmkzM0ApQHRAb0k8NzczOjMzNDc2NTQ0PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDBua2JeMXNqcl8tLTAtL3NzLW8jbyMtMjQwMS0uLS0xMC8vLS4vaTpiLW8jOmAtbyNtbCtiK2p0OiMvLl4%3D"}*/}
-                            {/*type="video/mp4"/>*/}
-                        {/*<source*/}
-                            {/*src={"http://v1-dy.ixigua.com/844a1d935b1261a8693922a78b000ffb/5c45e660/video/m/220b54fc20b3e23444bb03d328ffd5b0e56116144582000036265a7f7a3e/?rc=ampqNXg2bjRtajMzZmkzM0ApQHRAb0k8NzczOjMzNDc2NTQ0PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDBua2JeMXNqcl8tLTAtL3NzLW8jbyMtMjQwMS0uLS0xMC8vLS4vaTpiLW8jOmAtbyNtbCtiK2p0OiMvLl4%3D"}*/}
-                            {/*type="video/ogg"/>*/}
-                    {/*</video>*/}
-                    {/*<a*/}
-                        {/*download='http://v9-dy-y.ixigua.com/7f892873030ce11fb543953e7975caa6/5c45d9ca/video/m/220222ab7365ff74ac8b49f84b913ec94ff1159caf1000047580bbf0886/?rc=ajV5bDZ0NmxuZzMzOmkzM0ApQHRAb0lJMzgzNjozNDg8NDQ0PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDQzZ3EuMWExYl8tLWMtL3NzLW8jbyMvMDMxNS0uLS0yMC8vLS4vaTpiLW8jOmAtbyNtbCtiK2p0OiMvLl4%3D'*/}
-                        {/*href="http://v9-dy-y.ixigua.com/7f892873030ce11fb543953e7975caa6/5c45d9ca/video/m/220222ab7365ff74ac8b49f84b913ec94ff1159caf1000047580bbf0886/?rc=ajV5bDZ0NmxuZzMzOmkzM0ApQHRAb0lJMzgzNjozNDg8NDQ0PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDQzZ3EuMWExYl8tLWMtL3NzLW8jbyMvMDMxNS0uLS0yMC8vLS4vaTpiLW8jOmAtbyNtbCtiK2p0OiMvLl4%3D">*/}
-                        {/*click me*/}
-                    {/*</a>*/}
-                {/*</div>*/}
-                <div>
-                    {this.props.douyin._douyinAnalyze}
-                </div>
                 {/*当解析成功的时候显示*/}
                 {this.state.analyzeSuccess}
                 {this.state.analyzeSuccess ?
@@ -140,8 +128,6 @@ class Douyin extends Component <PageOwnProps, PageState> {
                             </source>
                             您的浏览器不支持 video 标签。
                         </video>
-                        {/*<iframe src={this.props.douyin._douyinAnalyze}>*/}
-                        {/*</iframe>*/}
                         <a className="down-btn"
                            href={this.props.douyin._douyinAnalyze}
                            download={this.props.douyin._douyinAnalyze} target="block">点击下载</a>

@@ -52,7 +52,7 @@ const request = (url: string, options: any = {}) => {
         })
         .catch((err: any) => {
                 loadingDom.style.display = "none";
-                return err
+                throw new Error(err)
             }
         );
 
