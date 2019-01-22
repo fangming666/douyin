@@ -19,10 +19,7 @@ export default {
         * queryDouyin({payload}: any, {call, put}: any) {
             try {
                 let result: any = yield call(gain_douyin, payload);
-                let {data, code, msg} = result;
-                if (code !== 200) {
-                    throw new Error(msg);
-                }
+                let {data} = result;
                 yield put({
                     type: 'changeDouyinAnalyze',
                     payload: {
@@ -31,7 +28,8 @@ export default {
                 })
 
             } catch (err) {
-                // throw new Error(err);
+                console.log("all err is", err);
+                throw new Error(err);
             }
 
         }

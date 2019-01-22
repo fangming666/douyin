@@ -3,19 +3,26 @@
  * */
 import * as fetch from 'dva/fetch';
 
-
-function parseJSON(response: any) {
-    return response.json();
-}
-
+//处理http状态码
 function checkStatus(response: any) {
     if (response.status >= 200 && response.status < 300) {
-        return response;
+        return response.json();
     }
     const error: any = new Error(response.statusText);
     error.response = response;
     throw error;
 }
+
+//处理业务逻辑code
+function manageCode(data: any) {
+    // 判断是否有一些需要全局拦截的自定义code
+    if (data.code !== 200) {
+        return new Promise((resolve, reject) => reject(data.msg));
+    }
+    // 传递参数到下级
+    return data;
+}
+
 
 /**
  * Requests a URL, returning a promise.
@@ -27,21 +34,21 @@ function checkStatus(response: any) {
 const request = (url: string, options: any = {}) => {
     let loadingDom: any = document.getElementsByClassName("loading")[0];
     loadingDom.style.display = "block";
+    // @ts-ignore
     let {getKey, link} = options;
     let resultUrl: string = `${url}?${getKey}=${link}`;
     return Promise.race([
         fetch(resultUrl, {
             method: "GET",
         }),
-        new Promise(function(resolve,reject){
-            setTimeout(()=> reject(new Error('request timeout')),2000)
+        new Promise(function (resolve, reject) {
+            setTimeout(() => reject(new Error('request timeout')), 20000)
         })])
         .then(checkStatus)
-        .then(parseJSON)
+        .then(manageCode)
         .then((data) => {
             loadingDom.style.display = "none";
             return data;
-            // return Promise.reject(data.msg)
         })
         .catch((err: any) => {
                 loadingDom.style.display = "none";
