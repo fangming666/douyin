@@ -14,8 +14,8 @@ class CommonQuestions extends Component <PageOwnProps, PageState> {
     public render() {
         return (
             <div className={'common-questions'}>
-                <p>
-                    常见问题
+                <p className={'question-title'}>
+                    常见问题：
                 </p>
                 <ol>
                     <li>Android手机上可以用吗？

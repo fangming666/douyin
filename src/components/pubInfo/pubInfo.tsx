@@ -14,10 +14,10 @@ class PubInfo extends Component <PageOwnProps, PageState> {
     public render() {
         return (
             <div className={"pub-info"}>
-                <p>
+                <p className={'add-title'}>
                     本站已支持解析下载<b>快手</b>、<b>火山小视频</b>、<b>快手</b>平台的视频, 请通过页面顶部导航菜单选择.
                 </p>
-                <p>
+                <p  className={'question-title'}>
                     使用方法：
                 </p>
                 <ol>
