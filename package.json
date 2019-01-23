@@ -116,7 +116,7 @@
   },
   "proxy": {
     "/api/*": {
-      "target": "http://webqsy.xiaofany.com/",
+      "target": "http://webqsy.xiaofany.com/api/",
       "secure": true,
       "pathRewrite": {
         "^/api": ""

@@ -52,7 +52,7 @@ class PubHead extends Component <PageOwnProps, PageState> {
                     <div className={'head-nav float-left'}>
                         {
                             this.props.app._navArr.map((item: any, index: number) => {
-                                return <NavLink to={item.to} key={index} onClick={this.changeTitle.bind(this, item.name)}>
+                                return <NavLink exact activeClassName={'nav-active'} to={item.to} key={index} onClick={this.changeTitle.bind(this, item.name)}>
                                     {item.name}
                                 </NavLink>
                             })

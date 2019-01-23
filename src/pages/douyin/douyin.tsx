@@ -4,10 +4,9 @@
 import * as React from "react";
 import {Component} from "react";
 import {connect} from "dva";
-// @ts-ignore
-import { DefaultPlayer as Video } from 'react-html5video';
-import 'react-html5video/dist/styles.css';
 import PubInput from "./../../components/pubInput/pubInput"
+import redirectToken from "./../../services/redirectToken"
+import "./douyin.scss"
 
 type PageOwnProps = {
     dispatch: any,
@@ -109,8 +108,16 @@ class Douyin extends Component <PageOwnProps, PageState> {
         }
     }
 
+
+    private goToken(){
+        redirectToken();
+    }
     public render() {
         return (
+            <div>
+                <button onClick={this.goToken.bind(this)}>
+                    click me
+                </button>
             <div className={"dy-warp"}>
                 <PubInput alertInfo={this.state.alertInfo}
                           ownAnalyze={this.analyze.bind(this)}>
@@ -133,6 +140,8 @@ class Douyin extends Component <PageOwnProps, PageState> {
                            download={this.props.douyin._douyinAnalyze} target="block">点击下载</a>
                     </div> :
                     null}
+            </div>
+
             </div>
         )
     }

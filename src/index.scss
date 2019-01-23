@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -9,63 +10,79 @@ body {
   font-size: 14px;
 }
 
-.float-left{
-  float: left!important;
+.float-left {
+  float: left !important;
 }
-.float-right{
-  float: right!important;
+
+.float-right {
+  float: right !important;
 }
-.clearfix{
-  &:after{
-    content:"";
+
+.clearfix {
+  &:after {
+    content: "";
     display: block;
     clear: both;
   }
 }
-.content{
+
+.content {
   max-width: 960px;
   width: 85%;
   margin: 70px auto 0;
 }
-.question-title{
-  font-size: 18px!important;
-  line-height: 2.5!important;
+
+.question-title {
+  font-size: 18px !important;
+  line-height: 2.5 !important;
   margin-top: 50px;
   font-weight: bolder;
 
 }
-.common-questions li p{
-  color: #666666!important;
+
+.common-questions li p {
+  color: #666666 !important;
   line-height: 1.6;
-  margin: 10px auto 20px!important;
+  margin: 10px auto 20px !important;
   text-align: justify;
 }
-.prompt{
-  white-space:nowrap;
+
+.prompt {
+  white-space: nowrap;
 }
-.contact{
+
+.contact {
   font-size: 16px;
   line-height: 2;
-  a{
+
+  a {
     text-decoration: none;
   }
 }
-.add-title{
+
+.add-title {
   font-size: 18px;
   text-align: center;
 }
-.clearfix{
-  @media screen and (max-height: 960px){
-    a{
-      img{
-        width: 30px!important;
-        height: 30px!important;
+
+.clearfix {
+  @media screen and (max-height: 960px) {
+    a {
+      img {
+        width: 30px !important;
+        height: 30px !important;
         margin-top: 10px;
       }
-      .float-left{
+
+      .float-left {
         font-size: 14px;
         padding-left: 5px;
       }
     }
   }
+}
+
+
+.pub-foot, .common-questions, .pub-head, .pub-info, .dy-warp {
+  display: none;
 }
