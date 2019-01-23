@@ -4,13 +4,14 @@ import { tokenApi } from "../utils/api";
  * 获取token
  * */
 export default function redirectToken() {
-    fetch(tokenApi, {
+    return fetch(tokenApi, {
         method: "GET",
     }).then(function (response) {
         return response.json();
     }).then(function (res) {
-        console.log("res IS", res);
-        // document.cookie = `token=${res}`;
+        var token = res.data.token;
+        document.cookie = "token=" + token;
+        return res;
     }).catch(function (err) {
         throw new Error(err);
     });

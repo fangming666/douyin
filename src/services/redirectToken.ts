@@ -6,13 +6,14 @@ import {tokenApi} from "../utils/api";
  * */
 
 export default function redirectToken() {
-    fetch(tokenApi, {
+    return fetch(tokenApi, {
         method: "GET",
     }).then(function (response) {
-       return response.json();
+        return response.json();
     }).then(function (res: any) {
-        console.log("res IS", res);
-        // document.cookie = `token=${res}`;
+        let {token} = res.data;
+        document.cookie = `token=${token}`;
+        return res;
     }).catch(err => {
         throw new Error(err)
     })

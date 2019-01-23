@@ -23,18 +23,17 @@ function checkStatus(response: any) {
 
 //处理业务逻辑code
 async function manageCode(data: any) {
-    console.log("data is", data);
     // 判断是否有一些需要全局拦截的自定义code
     if (data.code === 401) {
         //401：token过期
         document.cookie = "token=";
-        // await request(globalUrl, globalOptions);
-        return;
+        return request(globalUrl, globalOptions);
     } else if (data.code !== 200) {
         return new Promise((resolve, reject) => reject(data.msg));
+    } else {
+        return data;
     }
-    // 传递参数到下级
-    return data;
+
 }
 
 
@@ -44,7 +43,7 @@ async function manageCode(data: any) {
  * @param  {object} [options] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-const request = async (url: string, options: any = {}) => {
+const request:any = async (url: string, options: any = {}) => {
     let token: any = "";
 
     //全局赋值
@@ -62,15 +61,14 @@ const request = async (url: string, options: any = {}) => {
         try {
             await redirectToken();
             token = getCookie("token");
-            console.log("token is", token)
         } catch (err) {
-
+            throw new Error(err)
         }
     }
 
     //拼装url为get
     let {getKey, link} = options;
-    let resultUrl: string = `${url}?${getKey}=${link}?token=${token}`;
+    let resultUrl: string = `${url}?${getKey}=${link}&token=${token}`;
     return Promise.race([
         fetch(resultUrl, {
             method: "GET",

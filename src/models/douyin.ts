@@ -10,7 +10,7 @@ export default {
         "changeDouyinAnalyze"(state: any, {payload: {data}}: any) {
             return {
                 ...state,
-                _douyinAnalyze: data.video.replace(/\s/g,""),
+                _douyinAnalyze: data.video.video.replace(/\s/g,""),
             }
         },
     },

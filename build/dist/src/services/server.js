@@ -23,19 +23,19 @@ function checkStatus(response) {
 function manageCode(data) {
     return tslib_1.__awaiter(this, void 0, void 0, function () {
         return tslib_1.__generator(this, function (_a) {
-            console.log("data is", data);
             // 判断是否有一些需要全局拦截的自定义code
             if (data.code === 401) {
                 //401：token过期
                 document.cookie = "token=";
-                // await request(globalUrl, globalOptions);
-                return [2 /*return*/];
+                return [2 /*return*/, request(globalUrl, globalOptions)];
             }
             else if (data.code !== 200) {
                 return [2 /*return*/, new Promise(function (resolve, reject) { return reject(data.msg); })];
             }
-            // 传递参数到下级
-            return [2 /*return*/, data];
+            else {
+                return [2 /*return*/, data];
+            }
+            return [2 /*return*/];
         });
     });
 }
@@ -66,14 +66,13 @@ var request = function (url, options) {
                 case 2:
                     _a.sent();
                     token = getCookie("token");
-                    console.log("token is", token);
                     return [3 /*break*/, 4];
                 case 3:
                     err_1 = _a.sent();
-                    return [3 /*break*/, 4];
+                    throw new Error(err_1);
                 case 4:
                     getKey = options.getKey, link = options.link;
-                    resultUrl = url + "?" + getKey + "=" + link + "?token=" + token;
+                    resultUrl = url + "?" + getKey + "=" + link + "&token=" + token;
                     return [2 /*return*/, Promise.race([
                             fetch(resultUrl, {
                                 method: "GET",

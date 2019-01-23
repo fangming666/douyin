@@ -9,7 +9,7 @@ export default {
         //修改抖音解析路径
         "changeDouyinAnalyze": function (state, _a) {
             var data = _a.payload.data;
-            return tslib_1.__assign({}, state, { _douyinAnalyze: data.video.replace(/\s/g, "") });
+            return tslib_1.__assign({}, state, { _douyinAnalyze: data.video.video.replace(/\s/g, "") });
         },
     },
     effects: {

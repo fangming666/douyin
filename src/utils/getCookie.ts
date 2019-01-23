@@ -1,16 +1,15 @@
 /**
- * 获取cookie
- * @param  {any} cname       cookie的key值
- * @return {string}         返回cookie的val
- * */
-export default function getCookie(cname:any)
-{
-    let name = cname + "=";
-    let ca = document.cookie.split(';');
-    for(let i=0; i<ca.length; i++)
-    {
-        let c = ca[i].trim();
-        if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+ * 获取对应名称的cookie
+ * @param name cookie的名称
+ * @returns {null} 不存在时，返回null
+ */
+var getCookie = function (name: any) {
+    var arr;
+    var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+    if (arr = document.cookie.match(reg)){
+        return unescape(arr[2]);
+    }else{
+        return null;
     }
-    return "";
-}
+};
+export default getCookie
