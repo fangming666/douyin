@@ -2,42 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbf86b-ad5e-4e47-808f-a1bec1325d4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/huoshan.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/kuaishou.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/analyze.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/models/douyin.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/models/douyin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/models/douyin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/models/douyin.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/models/huoshan.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/models/huoshan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/models/huoshan.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/models/huoshan.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/models/kuaishou.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/models/kuaishou.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/models/kuaishou.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/models/kuaishou.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/pages/douyin/douyin.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/pages/douyin/douyin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/pages/douyin/douyin.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/pages/douyin/douyin.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/src/layout/centerRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/layout/centerRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/src/layout/centerRouter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/layout/centerRouter.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/dist/src/pages/huoshan/huoshan.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/pages/huoshan/huoshan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/dist/src/pages/huoshan/huoshan.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/pages/huoshan/huoshan.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/dist/src/pages/kuaishou/kuaishou.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/pages/kuaishou/kuaishou.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/dist/src/pages/kuaishou/kuaishou.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/pages/kuaishou/kuaishou.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/services/redirectToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/services/redirectToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/services/redirectToken.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/services/redirectToken.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/services/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/services/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/services/server.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/services/server.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/utils/api.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/utils/api.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/utils/getCookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/utils/getCookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dist/src/utils/getCookie.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/src/utils/getCookie.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/douyin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/douyin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/huoshan.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/huoshan.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/kuaishou.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/kuaishou.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/douyin/douyin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/douyin/douyin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/centerRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/centerRouter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/douyin/douyin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/douyin/douyin.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/huoshan/huoshan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/huoshan/huoshan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/kuaishou/kuaishou.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kuaishou/kuaishou.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/redirectToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/redirectToken.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getCookie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getCookie.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,54 +69,126 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-236326139">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scss" value="2" />
+          <entry key="tsx" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="SCSS" value="2" />
+          <entry key="TypeScript JSX" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="1" />
+          <entry key="tsx" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="TypeScript JSX" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/huoshan/huoshan.tsx">
+        <entry file="file://$PROJECT_DIR$/src/services/server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+            <state relative-caret-position="323">
+              <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/douyin/douyin.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-622">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="e#15#46#0" expanded="true" />
+                <element signature="e#146#204#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/kuaishou/kuaishou.tsx">
+        <entry file="file://$PROJECT_DIR$/src/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="37" column="196" selection-start-line="37" selection-start-column="196" selection-end-line="37" selection-end-column="196" />
+            <state>
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#15#46#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="955">
+              <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/layout/centerRouter.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+            <state relative-caret-position="281">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/analyze.ts">
+        <entry file="file://$PROJECT_DIR$/src/layout/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+            <state relative-caret-position="323">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#777#1349#0" />
-                <element signature="e#1416#1586#0" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/manifest.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pubHead/pubHead.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pubInput/pubInput.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -162,6 +211,8 @@
       <find>console</find>
       <find>douyin</find>
       <find>kuaishou</find>
+      <find>nav-active</find>
+      <find>down-btn</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -176,13 +227,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/douyin/douyin.scss" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/layout/centerRouter.tsx" />
         <option value="$PROJECT_DIR$/src/components/pubHead/pubHead.tsx" />
         <option value="$PROJECT_DIR$/src/components/pubHead/pubHead.scss" />
-        <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/src/services/redirectToken.ts" />
         <option value="$PROJECT_DIR$/src/utils/getCookie.ts" />
         <option value="$PROJECT_DIR$/src/services/kuaishou.ts" />
@@ -197,6 +244,10 @@
         <option value="$PROJECT_DIR$/src/utils/analyze.ts" />
         <option value="$PROJECT_DIR$/src/pages/kuaishou/kuaishou.tsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/pages/douyin/douyin.scss" />
+        <option value="$PROJECT_DIR$/src/index.scss" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/layout/centerRouter.tsx" />
       </list>
     </option>
   </component>
@@ -226,13 +277,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
               <item name="douyin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
@@ -248,7 +323,47 @@
               <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
               <item name="douyin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pubHead" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pubInput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pubLoading" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="douyin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
@@ -267,15 +382,7 @@
               <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
               <item name="douyin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="huoshan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="douyin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="kuaishou" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="douyin" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +400,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,6 +430,28 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="blu" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="build" />
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.blu" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -344,18 +474,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22948000" />
+    <option name="totallyTimeSpent" value="23677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24851191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21149674" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,7 +495,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.100164205" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49925596" visible="true" weight="0.100164205" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49925596" weight="0.100164205" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -441,25 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout/centerRouter.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pubHead/pubHead.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -469,15 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pubHead/pubHead.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="214">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -485,16 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/douyin/douyin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -510,11 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/server.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#18#53#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -543,9 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" lean-forward="true" selection-end-line="10" />
-          <folding>
-            <element signature="e#18#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,9 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#18#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,11 +661,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/douyin/douyin.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="-622">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#15#46#0" expanded="true" />
+            <element signature="e#146#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,11 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#777#1349#0" />
-            <element signature="e#1416#1586#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,6 +703,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/douyin/douyin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="955">
+          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layout/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pubInfo/pubInfo.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layout/centerRouter.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>

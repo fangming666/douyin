@@ -50,7 +50,7 @@ class Kuaishou extends Component <PageOwnProps, PageState> {
                     {/*当解析成功的时候显示*/}
                     {this.state.analyzeSuccess}
                     {this.state.analyzeSuccess ?
-                        <div>
+                        <div className={'video-content'}>
                             <video width="320" height="240" controls>
                                 <source
                                     src={this.props.kuaishou._kuaishouAnalyze}

@@ -28,9 +28,9 @@ class CenterRoute extends Component<PageOwnProps, PageState> {
     };
 
     componentDidMount() {
-        //修改html的页面标题
-        // let {title} = this.props;
-        // document.title = title;
+        /*修改html的页面标题*/
+        let {title} = this.props;
+        document.title = title;
     }
 
 
