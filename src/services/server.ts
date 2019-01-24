@@ -53,7 +53,7 @@ const request:any = async (url: string, options: any = {}) => {
 
     //显示loading
     let loadingDom: any = document.getElementsByClassName("loading")[0];
-    loadingDom.style.display = "block";
+    loadingDom.style.display = "flex";
 
 
     //若cookie是空则去获取cookie

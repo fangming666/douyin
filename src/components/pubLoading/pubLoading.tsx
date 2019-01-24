@@ -13,6 +13,7 @@ class Publoading extends Component <PageOwnProps, PageState> {
         return (
             <div className={"loading"}>
                 <img src={loadingImg} alt="loading"/>
+                <span>解析中</span>
             </div>
         )
     }

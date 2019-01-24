@@ -5,6 +5,8 @@ import * as tslib_1 from "tslib";
 import * as React from "react";
 import { Component } from "react";
 import { connect } from "dva";
+import './douyin.scss';
+import 'react-html5video/dist/styles.css';
 import PubInput from "./../../components/pubInput/pubInput";
 import Analyze from "./../../utils/analyze";
 import "./douyin.scss";
@@ -32,18 +34,17 @@ var Douyin = /** @class */ (function (_super) {
         });
     };
     Douyin.prototype.render = function () {
-        return (React.createElement("div", null,
-            React.createElement("div", { className: "dy-warp" },
-                React.createElement(PubInput, { alertInfo: this.state.alertInfo, ownAnalyze: this.analyze.bind(this) }),
-                this.state.analyzeSuccess,
-                this.state.analyzeSuccess ?
-                    React.createElement("div", null,
-                        React.createElement("video", { width: "320", height: "240", controls: true },
-                            React.createElement("source", { src: this.props.douyin._douyinAnalyze, type: "video/mp4" }),
-                            React.createElement("source", { src: this.props.douyin._douyinAnalyze, type: "video/ogg" }),
-                            "\u60A8\u7684\u6D4F\u89C8\u5668\u4E0D\u652F\u6301 video \u6807\u7B7E\u3002"),
-                        React.createElement("a", { className: "down-btn", href: this.props.douyin._douyinAnalyze, download: this.props.douyin._douyinAnalyze, target: "block" }, "\u70B9\u51FB\u4E0B\u8F7D")) :
-                    null)));
+        return (React.createElement("div", { className: "dy-warp" },
+            React.createElement(PubInput, { alertInfo: this.state.alertInfo, ownAnalyze: this.analyze.bind(this) }),
+            this.state.analyzeSuccess,
+            this.state.analyzeSuccess ?
+                React.createElement("div", { className: 'video-content' },
+                    React.createElement("video", { width: "320", height: "240", controls: true },
+                        React.createElement("source", { src: this.props.douyin._douyinAnalyze, type: "video/mp4" }),
+                        React.createElement("source", { src: this.props.douyin._douyinAnalyze, type: "video/ogg" }),
+                        "\u60A8\u7684\u6D4F\u89C8\u5668\u4E0D\u652F\u6301 video \u6807\u7B7E\u3002"),
+                    React.createElement("a", { className: "down-btn", href: this.props.douyin._douyinAnalyze, download: this.props.douyin._douyinAnalyze, target: "block" }, "\u70B9\u51FB\u4E0B\u8F7D")) :
+                null));
     };
     return Douyin;
 }(Component));

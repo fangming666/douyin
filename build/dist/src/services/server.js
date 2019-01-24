@@ -57,7 +57,7 @@ var request = function (url, options) {
                     globalUrl = url;
                     globalOptions = options;
                     loadingDom = document.getElementsByClassName("loading")[0];
-                    loadingDom.style.display = "block";
+                    loadingDom.style.display = "flex";
                     if (!!getCookie("token")) return [3 /*break*/, 4];
                     _a.label = 1;
                 case 1:

@@ -4,6 +4,10 @@
 import * as React from "react";
 import {Component} from "react";
 import {connect} from "dva";
+import './douyin.scss'
+// @ts-ignore
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 import PubInput from "./../../components/pubInput/pubInput"
 import Analyze from "./../../utils/analyze"
 import "./douyin.scss"
@@ -43,31 +47,28 @@ class Douyin extends Component <PageOwnProps, PageState> {
 
     public render() {
         return (
-            <div>
-                <div className={"dy-warp"}>
-                    <PubInput alertInfo={this.state.alertInfo}
-                              ownAnalyze={this.analyze.bind(this)}>
-                    </PubInput>
-                    {/*当解析成功的时候显示*/}
-                    {this.state.analyzeSuccess}
-                    {this.state.analyzeSuccess ?
-                        <div>
-                            <video width="320" height="240" controls>
-                                <source
-                                    src={this.props.douyin._douyinAnalyze}
-                                    type="video/mp4">
-                                </source>
-                                <source src={this.props.douyin._douyinAnalyze} type="video/ogg">
-                                </source>
-                                您的浏览器不支持 video 标签。
-                            </video>
-                            <a className="down-btn"
-                               href={this.props.douyin._douyinAnalyze}
-                               download={this.props.douyin._douyinAnalyze} target="block">点击下载</a>
-                        </div> :
-                        null}
-                </div>
-
+            <div className={"dy-warp"}>
+                <PubInput alertInfo={this.state.alertInfo}
+                          ownAnalyze={this.analyze.bind(this)}>
+                </PubInput>
+                {/*当解析成功的时候显示*/}
+                {this.state.analyzeSuccess}
+                {this.state.analyzeSuccess ?
+                    <div className={'video-content'}>
+                        <video width="320" height="240" controls>
+                            <source
+                                src={this.props.douyin._douyinAnalyze}
+                                type="video/mp4">
+                            </source>
+                            <source src={this.props.douyin._douyinAnalyze} type="video/ogg">
+                            </source>
+                            您的浏览器不支持 video 标签。
+                        </video>
+                        <a className={"down-btn"}
+                           href={this.props.douyin._douyinAnalyze}
+                           download={this.props.douyin._douyinAnalyze} target="block">点击下载</a>
+                    </div> :
+                    null}
             </div>
         )
     }
