@@ -33,7 +33,7 @@ function manageCode(data: any) {
  */
 const request = (url: string, options: any = {}) => {
     let loadingDom: any = document.getElementsByClassName("loading")[0];
-    loadingDom.style.display = "block";
+    loadingDom.style.display = "flex";
     // @ts-ignore
     let {getKey, link} = options;
     let resultUrl: string = `${url}?${getKey}=${link}`;
