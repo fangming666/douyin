@@ -74,7 +74,7 @@ const request:any = async (url: string, options: any = {}) => {
             method: "GET",
         }),
         new Promise(function (resolve, reject) {
-            setTimeout(() => reject(new Error('request timeout')), 20000)
+            setTimeout(() => reject(new Error('请求超时，请重试')), 20000)
         })])
         .then(checkStatus)
         .then(manageCode)

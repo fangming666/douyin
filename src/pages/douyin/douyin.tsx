@@ -5,11 +5,10 @@ import * as React from "react";
 import {Component} from "react";
 import {connect} from "dva";
 import './douyin.scss'
-// @ts-ignore
-import { DefaultPlayer as Video } from 'react-html5video';
-import 'react-html5video/dist/styles.css';
 import PubInput from "./../../components/pubInput/pubInput"
 import Analyze from "./../../utils/analyze"
+//@ts-ignore
+import {downloadApi} from "../../utils/api"
 import "./douyin.scss"
 
 type PageOwnProps = {
@@ -65,8 +64,9 @@ class Douyin extends Component <PageOwnProps, PageState> {
                             您的浏览器不支持 video 标签。
                         </video>
                         <a className={"down-btn"}
-                           href={this.props.douyin._douyinAnalyze}
-                           download={this.props.douyin._douyinAnalyze} target="block">点击下载</a>
+                           href={`${downloadApi}?url=${encodeURIComponent(this.props.douyin._douyinAnalyze)}`}
+                           download="视频.mp4"
+                        >点击下载</a>
                     </div> :
                     null}
             </div>
