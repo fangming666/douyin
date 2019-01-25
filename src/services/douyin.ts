@@ -6,5 +6,5 @@ import {douyinApi} from "../utils/api";
 
 
 export function gain_douyin(reqObj:any) {
-    return request(douyinApi,reqObj)
+    return request(douyinApi, reqObj)
 }

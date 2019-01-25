@@ -12,8 +12,7 @@ export default function redirectToken() {
         return response.json();
     }).then(function (res: any) {
         let {token} = res.data;
-        document.cookie = `token=${token}`;
-        return res;
+        return token;
     }).catch(err => {
         throw new Error(err)
     })
