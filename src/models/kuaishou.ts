@@ -16,14 +16,14 @@ export default {
     },
     effects: {
         //获取快手解析视频
-        * queryKuaishou({payload}: any, {call, put}: any) {
+        * queryKuaishou({payload}: any, {call,put}: any) {
             try {
                 let result: any = yield call(gain_kuaishou, payload);
                 let {data} = result;
                 yield put({
                     type: 'changeKuaishouAnalyze',
                     payload: {
-                        data:data
+                        data: data
                     }
                 })
 

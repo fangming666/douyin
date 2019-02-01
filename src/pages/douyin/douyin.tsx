@@ -26,6 +26,8 @@ type PageState = {
 class Douyin extends Component <PageOwnProps, PageState> {
     constructor(props: any) {
         super(props);
+        let text: string = "https://www.iesdouyin.com/share/video/6617227169502334212/?region=CN&mid=6597075293465217805&u_code=15d18g0ca&titleType=title&utm_source=copy_link&utm_campaign=client_share&utm_medium=android&app=aweme&iid=56681399044&timestamp=1548078657";
+        console.log(text);
         this.state = {
             alertInfo: "请先将视频链接粘贴到上面的输入框",//提示信息
             analyzeSuccess: false,//解析成功显示下载和预览的开关
@@ -36,11 +38,11 @@ class Douyin extends Component <PageOwnProps, PageState> {
     private async analyze(Val: any) {
         let {dispatch} = this.props;
         //正则换成链接
-        let judge = /http:\/\/v.douyin.com\/[A-Za-z0-9]+\//;
+        let judge = /(http:\/\/v.douyin.com\/[A-Za-z0-9]+\/)|(https:\/\/www\.iesdouyin.com\/share\/video\/[A-Za-z0-9_?=/&]+)/;
         //正则进行判断格式
         let judgeSwitch =
-            /[\s\u4E00-\u9FA5a-zA-z0-9#@!$%^&*()_+/_,."~`·！@#￥%……&*（）《》><？，。/]*http:\/\/v.douyin.com\/[A-Za-z0-9]+\/[\u4E00-\u9FA5a-zA-z0-9#@!$%^&*()_+/_,."~`·！@#￥%……&*（）《》？，。/]*/;
-        Analyze({dispatch, Val,judge,judgeSwitch, that:this,query:"douyin/queryDouyin"});
+            /([\s\u4E00-\u9FA5a-zA-z0-9#@!$%^&*()_+/_,."~`·！@#￥%……&*（）《》><？，。/]*http:\/\/v.douyin.com\/[A-Za-z0-9]+\/[\u4E00-\u9FA5a-zA-z0-9#@!$%^&*()_+/_,."~`·！@#￥%……&*（）《》？，。/]*)|(https:\/\/www\.iesdouyin.com\/share\/video\/[A-Za-z0-9_?=/&]+)/;
+        Analyze({dispatch, Val, judge, judgeSwitch, that: this, query: "douyin/queryDouyin"});
     }
 
 
